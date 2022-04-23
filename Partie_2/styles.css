@@ -11,6 +11,13 @@ footer{
     width: 100%;
     text-align: center;
     background-repeat: repeat;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 section {
@@ -83,7 +90,42 @@ form>a {
     padding-bottom: 4px;
 }
 
-input {
+input,select {
     width: 100%;
     border-radius: 4px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li::before {
+    content: "👍";
+    margin-right:2px;
+}
+
+ul :nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+ul, ol {
+    padding-right:50px;
+    padding-left:50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(120, 110, 110);
+    border: 1px solid black;
+    border-radius: 20px;
 }
