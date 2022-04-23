@@ -95,17 +95,21 @@ input,select {
     border-radius: 4px;
 }
 
-li {
+ul>li {
     list-style-type: none;
 }
 
-li::before {
+ul>li::before {
     content: "👍";
     margin-right:2px;
 }
+ul {
+    border-radius: 20px;
+    background-color: rgb(240, 230, 230);
+}
 
 ul :nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #e4dada;
 }
 
 ul, ol {
