@@ -100,7 +100,8 @@ ul>li {
 }
 
 ul>li::before {
-    content: "👍";
+    content: "✔";
+    color: green;
     margin-right:2px;
 }
 ul {
